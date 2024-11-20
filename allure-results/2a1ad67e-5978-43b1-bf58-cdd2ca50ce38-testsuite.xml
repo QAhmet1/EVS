@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1732028039145' stop='1732028042415'>
+    <name>Contact Form Tests</name>
+    <title>Contact Form Tests</title>
+    <test-cases>
+        <test-case start='1732028039145' status='passed' stop='1732028042414'>
+            <name>should the contact page load successfully</name>
+            <title>should the contact page load successfully</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

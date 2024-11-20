@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1732028087901' stop='1732028099571'>
+    <name>Social Media Links</name>
+    <title>Social Media Links</title>
+    <test-cases>
+        <test-case start='1732028087901' status='passed' stop='1732028091819'>
+            <name>Should navigate to Linkedin</name>
+            <title>Should navigate to Linkedin</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1732028091871' status='passed' stop='1732028094365'>
+            <name>Should navigate to Facebook</name>
+            <title>Should navigate to Facebook</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1732028094418' status='passed' stop='1732028096980'>
+            <name>Should navigate to Instagram</name>
+            <title>Should navigate to Instagram</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1732028097031' status='passed' stop='1732028099571'>
+            <name>Should navigate to YouTube</name>
+            <title>Should navigate to YouTube</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

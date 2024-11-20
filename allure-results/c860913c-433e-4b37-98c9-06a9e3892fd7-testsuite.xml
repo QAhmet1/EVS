@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1732028101923' stop='1732028113428'>
+    <name>Negative Login Tests</name>
+    <title>Negative Login Tests</title>
+    <test-cases>
+        <test-case start='1732028101923' status='broken' stop='1732028113280'>
+            <name>Should show an error for invalid credentials</name>
+            <title>Should show an error for invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 8000ms: The command was expected to run against origin `https://evs.com` but the application is at origin `https://account.my-evs.com`.
+                
+                This commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.
+                
+                Using `cy.origin()` to wrap the commands run on `https://account.my-evs.com` will likely fix this issue.
+                
+                `cy.origin('https://account.my-evs.com', () => {`
+                `  &lt;commands targeting https://account.my-evs.com go here>`
+                `})`
+                
+                https://on.cypress.io/cy-visit-succeeded-but-commands-fail
+                
+                Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Negative Login Tests`</message>
+                <stack-trace>CypressError: Timed out retrying after 8000ms: The command was expected to run against origin `https://evs.com` but the application is at origin `https://account.my-evs.com`.
+                
+                This commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.
+                
+                Using `cy.origin()` to wrap the commands run on `https://account.my-evs.com` will likely fix this issue.
+                
+                `cy.origin('https://account.my-evs.com', () => {`
+                `  &lt;commands targeting https://account.my-evs.com go here>`
+                `})`
+                
+                https://on.cypress.io/cy-visit-succeeded-but-commands-fail
+                
+                Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Negative Login Tests`
+                    at cypressErr (https://evs.com/__cypress/runner/cypress_runner.js:75898:18)
+                    at Object.errByPath (https://evs.com/__cypress/runner/cypress_runner.js:75952:10)
+                    at Object.commandCanCommunicateWithAUT (https://evs.com/__cypress/runner/cypress_runner.js:144907:90)
+                    at &lt;unknown> (https://evs.com/__cypress/runner/cypress_runner.js:131813:22)
+                    at Object.subjectFn (https://evs.com/__cypress/runner/cypress_runner.js:143709:16)
+                    at $Cy.verifyUpcomingAssertions (https://evs.com/__cypress/runner/cypress_runner.js:143048:31)
+                    at onRetry (https://evs.com/__cypress/runner/cypress_runner.js:143700:15)
+                    at tryCatcher (https://evs.com/__cypress/runner/cypress_runner.js:1807:23)
+                    at Promise.attempt.Promise.try (https://evs.com/__cypress/runner/cypress_runner.js:4315:29)
+                    at whenStable (https://evs.com/__cypress/runner/cypress_runner.js:143587:68)
+                    at &lt;unknown> (https://evs.com/__cypress/runner/cypress_runner.js:143528:14)
+                    at tryCatcher (https://evs.com/__cypress/runner/cypress_runner.js:1807:23)
+                    at Promise._settlePromiseFromHandler (https://evs.com/__cypress/runner/cypress_runner.js:1519:31)
+                    at Promise._settlePromise (https://evs.com/__cypress/runner/cypress_runner.js:1576:18)
+                    at Promise._settlePromise0 (https://evs.com/__cypress/runner/cypress_runner.js:1621:10)
+                    at Promise._settlePromises (https://evs.com/__cypress/runner/cypress_runner.js:1701:18)
+                    at Promise._fulfill (https://evs.com/__cypress/runner/cypress_runner.js:1645:18)
+                    at &lt;unknown> (https://evs.com/__cypress/runner/cypress_runner.js:5450:46)
+                From Your Spec Code:
+                    at Context.eval (webpack://evs_cypress_project/./cypress/e2e/ui/verifyLoginFunc.cy.js:7:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

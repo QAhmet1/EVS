@@ -1,0 +1,31 @@
+{
+  "name": "evs_cypress_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "type": "module",
+    "cy:clear-allure": "rm -rf allure-results && rm -rf allure-report",
+    "browser:chrome": "npx cypress run --browser=chrome --headed --reporter mocha-allure-reporter",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open",
+    "cy:run:ui": "cypress run --browser=chrome --headed --spec 'cypress/e2e/ui/*.cy.js' --reporter mocha-allure-reporter",
+    "cy:run:api": "cypress run --spec 'cypress/e2e/api/*.cy.js' --reporter mocha-allure-reporter",  
+    "report:allure": "npm run cy:clear-allure && npm run browser:chrome && allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "report:allure:ui": "npm run cy:clear-allure && npm run cy:run:ui && allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "report:allure:api": "npm run cy:clear-allure && npm run cy:run:api && allure generate allure-results --clean -o allure-report && allure open  allure-report"
+    
+  },
+  "keywords": [],
+  "author": "Ahmet Demir",
+  "license": "ISC",
+  "devDependencies": {
+    "allure-commandline": "^2.32.0",
+    "cypress": "^13.15.2",
+    "cypress-xpath": "^2.0.1",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
